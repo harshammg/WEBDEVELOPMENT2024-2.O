@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Table</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light background for better contrast */
+            padding: 20px;
+        }
+        .table {
+            margin: auto;
+            width: 80%; /* Adjust width as needed */
+            background-color: white; /* White background for table */
+            border-radius: 20px; /* More pronounced rounded corners for the outer box */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            overflow: hidden; /* Ensures inner elements respect border radius */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merge borders */
+        }
+        th, td {
+            border: 2px solid teal; /* Thicker, colored borders for better visibility */
+            font-size: 18px;
+            padding: 12px; /* Increased padding for better spacing */
+        }
+        .hed1 {
+            background-color: hotpink;
+        }
+        .si {
+            width: 10%;
+            text-align: center; /* Center align single index column */
+        }
+        .comp {
+            width: 40%;
+            text-align: center;
+        }
+        th {
+            background-color: teal;
+            color: white;
+            font-size: 22px; /* Increased font size for headers */
+        }
+        .next, button {
+            width: 80%;
+            background-color: grey;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block; /* Ensure button/link takes full width */
+            margin-top: 10px; /* Add spacing between elements */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+        .next:hover, button:hover {
+            background-color: darkgrey;
+        }
+        .h1 {
+            font-style: italic;
+            color: #000080;
+            font-size: 22px; /* Slightly increased font size */
+            text-align: center;
+            margin-bottom: 10px; /* Add spacing below heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <thead>
+                <tr class="hed1">
+                    <th colspan="3">
+                        <h1 class="h1">Some Information about Cars <br>
+                            <a href="informationpage.html" class="next">More Information</a>
+                        </h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"><h2>Company</h2></th>
+                    <th><h2>Cars</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="si">1</td>
+                    <td rowspan="3" class="comp">Maruti Suzuki</td>
+                    <td>Swift</td>
+                </tr>
+                <tr>
+                    <td>Dzire</td>
+                </tr>
+                <tr>
+                    <td>Wagon R</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="si">2</td>
+                    <td rowspan="3" class="comp">Hyundai Motors</td>
+                    <td>Creta</td>
+                </tr>
+                <tr>
+                    <td>Grand i10</td>
+                </tr>
+                <tr>
+                    <td>Verna</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="si">3</td>
+                    <td rowspan="3" class="comp">Tata Motors</td>
+                    <td>Nexon</td>
+                </tr>
+                <tr>
+                    <td>Harrier</td>
+                </tr>
+                <tr>
+                    <td>Tiago</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="si">4</td>
+                    <td rowspan="3" class="comp">Mahindra & Mahindra</td>
+                    <td>Thar</td>
+                </tr>
+                <tr>
+                    <td>Bolero</td>
+                </tr>
+                <tr>
+                    <td>XUV300</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="si">5</td>
+                    <td rowspan="3" class="comp">Kia</td>
+                    <td>Seltos</td>
+                </tr>
+                <tr>
+                    <td>Sonet</td>
+                </tr>
+                <tr>
+                    <td>Carnival</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="home1.html"><button>Go Back</button></a>
+    </div>
+</body>
+</html>

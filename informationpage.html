@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Indian Car Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+            justify-content: center;
+            gap: 20px; /* Space between boxes */
+            max-width: 1000px;
+            padding: 20px;
+            border: 2px solid black; /* Outer border */
+            border-radius: 15px; /* Curvy outer edges */
+            background-color: #f9f9f9; /* Background color */
+        }
+        .car-box {
+            width: 200px; /* Fixed width for each box */
+            border: 2px solid black; /* Inner box border */
+            border-radius: 10px;
+            background-color: #ffffff; /* Inner box background */
+            padding: 20px;
+            text-align: center; /* Center the text */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+        }
+        .car-box:hover {
+            transform: scale(1.1); /* Zooms the box on hover */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+        }
+        .car-box img {
+            width: 100%; /* Full width of the box */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+        }
+        .car-box h3 {
+            font-size: 1.2em; /* Heading font size */
+            color: #000080; /* Heading color */
+            margin: 10px 0; /* Space above and below heading */
+        }
+        .car-box p {
+            font-size: 0.9em; /* Paragraph font size */
+            color: #333; /* Darker text for readability */
+        }
+        button {
+            background-color: grey; /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px; /* Button padding */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-top: 20px; /* Space above button */
+            text-align: center; /* Center align text in button */
+            width: 100%; /* Full width of the button */
+            max-width: 200px; /* Center align the button */
+        }
+        button:hover {
+            background-color: darkgrey; /* Button hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="car-box">
+            <h3><a href="https://www.marutisuzuki.com/">Maruti Suzuki</a></h3>
+            <img src="car1.png" alt="Maruti Suzuki car">
+            <p>Maruti Suzuki is the market leader, known for fuel-efficient and affordable cars.</p>
+            <a href="https://www.marutisuzuki.com/"><button>Go Back</button></a>
+        </div>
+        <div class="car-box">
+            <h3><a href="https://www.hyundai.com/in/en">Hyundai Motors</a></h3>
+            <img src="car2.png" alt="Hyundai Motors car">
+            <p>Hyundai offers stylish and feature-packed vehicles.</p>
+            <a href="https://www.hyundai.com/in/en"><button>Go Back</button></a>
+        </div>
+        <div class="car-box">
+            <h3><a href="https://cars.tatamotors.com/">Tata Motors</a></h3>
+            <img src="car3.png" alt="Tata Motors car">
+            <p>Tata Motors provides a range of vehicles, from budget cars to SUVs.</p>
+            <a href="https://cars.tatamotors.com/"><button>Go Back</button></a>
+        </div>
+        <div class="car-box">
+            <h3><a href="https://auto.mahindra.com/">Mahindra</a></h3>
+            <img src="car4.png" alt="Mahindra car">
+            <p>Mahindra is known for its rugged SUVs and versatile vehicles.</p>
+            <a href="https://auto.mahindra.com/"><button>Go Back</button></a>
+        </div>
+        <div class="car-box">
+            <h3><a href="https://www.kia.com/in/">KIA</a></h3>
+            <img src="car5.png" alt="Kia car">
+            <p>Kia offers stylish, feature-rich vehicles and has quickly gained popularity.</p>
+            <a href="https://www.kia.com/in/"><button>Go Back</button></a>
+        </div>
+        <a href="carpage.html"><button>Go Back</button></a>
+    </div>
+</body>
+</html>

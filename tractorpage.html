@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractor Table</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light background for better contrast */
+            padding: 20px;
+        }
+        .table {
+            margin: auto;
+            width: 80%; /* Adjust width as needed */
+            background-color: white; /* White background for the table */
+            border-radius: 20px; /* More pronounced rounded corners for the outer box */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            overflow: hidden; /* Ensures inner elements respect border radius */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merge borders */
+        }
+        th, td {
+            border: 2px solid teal; /* Thicker, colored borders for better visibility */
+            font-size: 18px;
+            padding: 12px; /* Increased padding for better spacing */
+        }
+        .hed1 {
+            background-color: hotpink;
+        }
+        .si {
+            width: 10%;
+            text-align: center; /* Center align single index column */
+        }
+        .comp {
+            width: 40%;
+            text-align: center;
+        }
+        th {
+            background-color: teal;
+            color: white;
+            font-size: 22px; /* Increased font size for headers */
+        }
+        .next, button {
+            width: 80%;
+            background-color: grey;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block; /* Ensure button/link takes full width */
+            margin-top: 10px; /* Add spacing between elements */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+        .next:hover, button:hover {
+            background-color: darkgrey;
+        }
+        .h1 {
+            font-style: italic;
+            color: #000080;
+            font-size: 22px; /* Slightly increased font size */
+            text-align: center;
+            margin-bottom: 10px; /* Add spacing below heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <thead>
+                <tr class="hed1">
+                    <th colspan="3">
+                        <h1 class="h1">Some Information about Tractors</h1>
+                        <br>
+                        <a href="tractorinformation.html"><button class="next">More Information</button></a>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"><h1>Company</h1></th>
+                    <th><h1>Tractors</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="si">1</td>
+                    <td rowspan="2" class="comp">Mahindra & Mahindra</td>
+                    <td>Mahindra Jivo</td>
+                </tr>
+                <tr>
+                    <td>Mahindra Arjun</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="si">2</td>
+                    <td rowspan="2" class="comp">TAFE</td>
+                    <td>Massey Ferguson 1700</td>
+                </tr>
+                <tr>
+                    <td>Massey Ferguson 241</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="si">3</td>
+                    <td rowspan="2" class="comp">Escorts Kubota Limited</td>
+                    <td>Powertrac 4800</td>
+                </tr>
+                <tr>
+                    <td>Kubota Neo Series</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="si">4</td>
+                    <td rowspan="2" class="comp">Sonalika International Tractors</td>
+                    <td>Sonalika Tiger</td>
+                </tr>
+                <tr>
+                    <td>Sonalika Mahabali</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="si">5</td>
+                    <td rowspan="2" class="comp">John Deere Private Limited</td>
+                    <td>John Deere 5050</td>
+                </tr>
+                <tr>
+                    <td>John Deere 6000</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="home1.html"><button class="next">Go Back</button></a>
+    </div>
+</body>
+</html>

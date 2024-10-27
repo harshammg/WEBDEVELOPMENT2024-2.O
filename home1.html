@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Home 2</title>
+    <style>
+        body {
+            background: #eaeaea;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-wrapper {
+            display: flex;
+            gap: 30px; /* Equal gap between image boxes */
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.2); /* Zoom in on hover */
+        }
+
+        .container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <a href="bikepage.html">
+                <div class="image-container">
+                    <img src="bike5.png" alt="bike">
+                </div>
+            </a>
+            <a href="carpage.html">
+                <div class="image-container">
+                    <img src="car01.png" alt="car">
+                </div>
+            </a>
+            <a href="tractorpage.html">
+                <div class="image-container">
+                    <img src="tractormax.png" alt="tractor">
+                </div>
+            </a>
+        </div>
+        <a href="index.html"><button>Go back</button></a>
+    </div>
+</body>
+</html>
